@@ -1,7 +1,9 @@
 import numpy as np
 
-name = 'M_e_l_a_n_a_'
+name = 'Melana'
+name = '_'.join(name)
 
+print(name)
 name_1 = name.upper()
 print(name_1)
 

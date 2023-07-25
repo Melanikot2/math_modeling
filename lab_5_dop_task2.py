@@ -13,4 +13,4 @@ def rand(n, a):
 
     return b
 
-print('Число:', rand(n, a))
+print('Число:', rand(3, [3,4,5,6,7,8]))

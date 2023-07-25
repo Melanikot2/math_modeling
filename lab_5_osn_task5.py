@@ -2,10 +2,11 @@ import numpy as np
 
 name = 'Melana'
 
-name_1 = name.upper()
-code_1 = [symbol for symbol in name_1]
-print(code_1)
-sum_1 = 0
+code = [symbol for symbol in name.upper()]
+print(code)
+
+code = sum([ord(symbol) for symbol in name.upper()])
+print(code)
 
 for i in range(0, len(code_1)):
     sum_1 += ord(code_1[i])
