@@ -9,7 +9,7 @@ def ellips(N, a, b):
 
     f_xy = X ** 2 / a ** 2 + Y ** 2 / b ** 2 - 1
 
-    plt.contour(X, Y, f_xy)
+    plt.contour(X, Y, f_xy, levels=0)
     plt.axis('equal')
     plt.savefig('lab_6_osn_task3.png')
 
