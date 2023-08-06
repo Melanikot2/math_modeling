@@ -3,7 +3,7 @@ import numpy as np
 import random
 
 def ell(e, p):
-    f = np.linspace(0, 360, 500)
+    f = np.linspace(-np.pi, np.pi, 5000)
     X = []
     Y = []
     for i in f:
@@ -12,8 +12,7 @@ def ell(e, p):
         X.append(x)
         Y.append(y)
     
-    plt.contour(X, Y)
-    plt.axis('equal')
+    plt.plot(X, Y)
     plt.savefig('ell.png')
 
-ell(e=0.9, p=10)
+ell(e=0.5, p=10)
