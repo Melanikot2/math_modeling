@@ -12,6 +12,7 @@ def lissazhu(B, t, N, b, a=1, A=1, delta=np.pi/2):
         X.append(x)
         Y.append(y)
     plt.plot(X, Y)
+    plt.title('Lissazhu')
     plt.axis('equal')
     plt.savefig('lissazhu.png')
 

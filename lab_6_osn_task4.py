@@ -14,6 +14,7 @@ def arh_spiral(k, N):
     f_xy = X ** 2 + Y ** 2 - (k * f) ** 2
 
     plt.contour(X, Y, f_xy, levels=0)
+    plt.title('Arh_spiral')
     plt.axis('equal')
     plt.savefig('arh_spiral.png')
 

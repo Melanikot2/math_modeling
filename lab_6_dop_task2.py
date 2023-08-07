@@ -1,6 +1,5 @@
 import matplotlib.pyplot as plt
 import numpy as np
-import random
 
 def ell(e, p):
     f = np.linspace(-np.pi, np.pi, 5000)
