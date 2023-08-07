@@ -14,7 +14,7 @@ def ladder(n):
         y.append(j)
     y.append(n)
 
-    plt.plot(x, y, color='m')
+    plt.plot(x, y, color='w')
     plt.title(f'Лесенка из {n} ступенек')
     plt.axis('equal')
     plt.savefig('ladder.png')

@@ -11,7 +11,7 @@ def func(a, b):
             y.append(i**2)
         else:
             y.append(b**2)
-    plt.plot(x, y)
+    plt.plot(x, y, color='m')
     plt.title('Func')
     plt.axis('equal')
     plt.savefig('func.png')
