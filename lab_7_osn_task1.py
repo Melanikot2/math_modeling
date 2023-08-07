@@ -7,7 +7,7 @@ def cikloida(R, t_min, t_max):
     x = R * (t - np.sin(t)**3)
     y = R * (1 - np.cos(t)**3)
 
-    plt.plot(x, y)
+    plt.plot(x, y, ls='--')
     plt.axis('equal')
     plt.savefig('cikloida.png')
 
@@ -24,4 +24,4 @@ def astroida(R, t_min, t_max):
     plt.axis('equal')
     plt.savefig('astroida.png')
 
-astroida(R=8, t_min=0, t_max=4)
+astroida(R=44, t_min=0, t_max=57)
