@@ -4,15 +4,14 @@ from matplotlib.animation import FuncAnimation
 
 fig, ax = plt.subplots()
 
-anim_object = plt.plot([], [], 'o')
+ball = plt.plot([], [], 'o')
 
-xdata, ydata = [0], [0]
 
 ax.set_xlim(-100, 100)
 ax.set_ylim(-100, 100)
 
 def circle(n, frame):
-    xdata.append(n * frame * np.cos(f))
+    x = n * frame * np.cos(f))
     ydata.append(n * frame * np.sin(f))
     anim_object.set_data(xdata, ydata)
     return anim_object
