@@ -1,22 +1,27 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib.animation import FuncAnimation
+import matplotlib.animation as animation
 
 fig, ax = plt.subplots()
 
 ball = plt.plot([], [], 'o')
 
+xdata, ydata = [0], [0]
 
 ax.set_xlim(-100, 100)
 ax.set_ylim(-100, 100)
 
-def circle(n, frame):
-    x = n * frame * np.cos(f))
-    ydata.append(n * frame * np.sin(f))
-    anim_object.set_data(xdata, ydata)
-    return anim_object
+def circle(t, alpha):
+    phi = np.linspace(0, 2*np.pi, 1000)
+    x = alpha * t * np.cos(phi)
+    y = alpha * t * np.sin(phi)
+    return x, y
 
-ani = FuncAnimation(fig, circle, n=2, frames=np.arange(0, 50, 1), f=np.arange(0, 2 * np.pi, 0.1), interval=500)
+plt.axis('equal')
 
+def animate(i):
+    ball.set_data(circle(t=i, alpha=2))
+
+ani = animation.FuncAnimation(fig, animate, frames = 500, interval=1000)
 
 ani.save('circle.gif')
