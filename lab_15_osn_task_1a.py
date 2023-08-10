@@ -3,8 +3,8 @@ import numpy as np
 
 fig, ax = plt.subplots(subplot_kw={'projection': '3d'})
 
-phi = np.linspace(0, 2*np.pi, 10000)
-theta = np.linspace(0, np.pi, 10000)
+phi = np.linspace(-2*np.pi, 2*np.pi, 10000)
+theta = np.linspace(-2*np.pi, 2*np.pi, 10000)
 
 x = np.outer(phi, np.cos(theta))
 y = np.outer(phi, np.sin(theta))

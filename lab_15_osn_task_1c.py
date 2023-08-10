@@ -4,7 +4,7 @@ import numpy as np
 fig, ax = plt.subplots(subplot_kw={'projection': '3d'})
 
 phi = np.linspace(0, 2*np.pi, 1000)
-theta = np.linspace(0, np.pi, 1000)
+theta = np.linspace(0, 4*np.pi, 1000)
 
 a = 780
 b = 570
