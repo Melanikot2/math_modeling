@@ -3,7 +3,7 @@ import numpy as np
 
 def func(a, b):
     y = []
-    x = np.arange(-500, 500, 1)
+    x = np.arange(-5, 5, 0.01)
     for i in x:
         if i < a:
             y.append(a**2)
@@ -16,5 +16,5 @@ def func(a, b):
     plt.axis('equal')
     plt.savefig('func.png')
 
-func(a=7, b=12)
+func(a=0, b=3)
         
