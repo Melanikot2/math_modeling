@@ -4,7 +4,7 @@ import matplotlib.animation as animation
 
 fig, ax = plt.subplots()
 
-ball, = plt.plot([], [], 'o')
+ball, = plt.plot([], [], '-')
 
 xdata, ydata = [0], [0]
 
@@ -22,6 +22,6 @@ plt.axis('equal')
 def animate(i):
     ball.set_data(circle(t=i, alpha=2))
 
-ani = animation.FuncAnimation(fig, animate, frames = 500, interval=1000)
+ani = animation.FuncAnimation(fig, animate, frames = 500, interval=30)
 
 ani.save('circle.gif')
