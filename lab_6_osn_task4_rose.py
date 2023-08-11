@@ -3,7 +3,7 @@ import numpy as np
 
 phi = np.linspace(0, 20*np.pi, 1000000)
 
-k = 50
+k = 5
 r = np.sin(k * phi)
 
 x = r * np.cos(phi)

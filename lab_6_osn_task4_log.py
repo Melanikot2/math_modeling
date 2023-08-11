@@ -3,7 +3,7 @@ import numpy as np
 
 phi = np.linspace(0, 8*np.pi, 1000000)
 
-b = 1
+b = 0.1
 r = np.exp(b * phi)
 
 x = r * np.cos(phi)
