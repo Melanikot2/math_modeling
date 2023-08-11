@@ -22,6 +22,6 @@ plt.axis('equal')
 def animate(i):
     ball.set_data(circle(t=i, alpha=2))
 
-ani = animation.FuncAnimation(fig, animate, frames = 500, interval=30)
+ani = animation.FuncAnimation(fig, animate, frames=500, interval=30)
 
 ani.save('circle.gif')
